@@ -2,8 +2,8 @@ services:
   - type: web
     name: safety-monitoring-backend
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python run.py dashboard
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && python run.py dashboard
     envVars:
       - key: PORT
         value: 10000
