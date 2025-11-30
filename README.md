@@ -43,6 +43,26 @@ In industrial areas like factories, building sites and train yards where employe
 - Human error during system setup or configuration.
 
 
+## Quick Start
+1. Clone & Setup
+'''git clone https://github.com/SuneethKokala/IU_Project_Suneeth-Kokala.git
+cd IU_Project_Suneeth-Kokala/automated-safety-monitoring-system'''
+
+2. Backend Setup
+'''cd backend
+pip install -r requirements.txt
+python setup_database.py
+python main.py'''
+
+3. Frontend Setup
+'''cd ../frontend
+npm install --legacy-peer-deps
+npm start'''
+
+
+
+
 # Phase Status
 1. Conception Phase - Done
-2. Development Phase - Under Progress
+2. Development Phase - Done
+3. Finalization Phase - Done
