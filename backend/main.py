@@ -9,10 +9,13 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'app'))
 def run_dashboard():
     """Start the web dashboard"""
     from app.web.dashboard import app
+    import os
+    port = int(os.environ.get('PORT', 3001))
+    debug_mode = os.environ.get('PORT') is None
     print("🌐 Starting Safety Monitoring Dashboard...")
-    print("📊 Access dashboard at: http://localhost:3001")
+    print(f"📊 Access dashboard at: http://localhost:{port}")
     print("👤 Login: supervisor / admin123")
-    app.run(debug=True, host='0.0.0.0', port=3001)
+    app.run(debug=debug_mode, host='0.0.0.0', port=port, use_reloader=False)
 
 def run_detection():
     """Start real-time PPE detection"""

@@ -25,10 +25,12 @@ def run_camera():
 def run_dashboard():
     """Start web dashboard"""
     from app.web.dashboard import app
+    import os
+    port = int(os.environ.get('PORT', 3001))
     print("Starting Safety Monitoring Dashboard...")
-    print("Access: http://localhost:3001")
+    print(f"Access: http://localhost:{port}")
     print(" Login: supervisor / admin123")
-    app.run(debug=True, host='0.0.0.0', port=3001)
+    app.run(debug=False, host='0.0.0.0', port=port, use_reloader=False, threaded=True)
 
 def train_model():
     """Train YOLO model"""
