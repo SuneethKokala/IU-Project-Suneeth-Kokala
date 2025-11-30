@@ -42,7 +42,7 @@ In industrial areas like factories, building sites and train yards where employe
 - Environmental factors (poor lighting, obstructions, weather) impacting accuracy.
 - Human error during system setup or configuration.
 
-
+# How to run
 ## Quick Start
 1. Clone & Setup
 '''git clone https://github.com/SuneethKokala/IU_Project_Suneeth-Kokala.git
