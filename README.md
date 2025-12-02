@@ -45,19 +45,19 @@ In industrial areas like factories, building sites and train yards where employe
 # How to run
 ## Quick Start
 1. Clone & Setup
-'''git clone https://github.com/SuneethKokala/IU_Project_Suneeth-Kokala.git
-cd IU_Project_Suneeth-Kokala/automated-safety-monitoring-system'''
+**'''git clone https://github.com/SuneethKokala/IU_Project_Suneeth-Kokala.git'''**
+**'''cd IU_Project_Suneeth-Kokala/automated-safety-monitoring-system'''**
 
 2. Backend Setup
-'''cd backend
-pip install -r requirements.txt
-python setup_database.py
-python main.py'''
+**'''cd backend'''**
+**'''pip install -r requirements.txt'''**
+**'''python setup_database.py'''**
+**'''python main.py'''**
 
 3. Frontend Setup
-'''cd ../frontend
-npm install --legacy-peer-deps
-npm start'''
+**'''cd frontend'''**
+**'''npm install --legacy-peer-deps'''**
+**'''npm start'''**
 
 
 
