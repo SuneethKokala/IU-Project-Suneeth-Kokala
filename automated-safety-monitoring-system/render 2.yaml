@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: safety-monitoring-backend
+    env: python
+    buildCommand: pip install -r automated-safety-monitoring-system/backend/requirements.txt
+    startCommand: cd automated-safety-monitoring-system/backend && python run.py dashboard
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PORT
+        value: 10000
